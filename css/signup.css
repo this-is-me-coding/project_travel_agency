@@ -1,0 +1,161 @@
+.register_form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.register_form h2, h3, h4, h5, h6 {
+    margin: 0;
+    background: transparent;
+    color: #000;
+    padding: 5px 0;
+}
+
+.label_required::after {
+    content: "*";
+    font-size: 10px;
+    vertical-align: super;
+    color: #D01114;
+}
+
+.register_form input, select {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ebf0f2;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register_form>.flexbox.register_row {
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+}
+
+.register_form>div.register_row>div.register_input_section, .register_form>div.register_row>div.register_input_description {
+    width: 50%;
+}
+
+.register_form>div.register_row>div.register_input_section {
+    gap: 15px;
+}
+
+.register_input_description {
+    color: #7f7f7f;
+}
+
+.register_form>div.register_row>div.register_input_section>label {
+    width: 32%;
+}
+
+.register_form>div.register_row>div.register_input_section>input, .register_form>div.register_row>div.register_input_section>select {
+    width: 63%;
+}
+
+.register_form>div.register_row>div.register_input_section>select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.register_input_select {
+    position: relative;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.register_form>div.register_row.register_checkbox_row>div.flexbox.register_input_section {
+    justify-content: flex-start;
+}
+
+.register_form>div.register_row.register_checkbox_row>div.register_input_section>input {
+    width: auto;
+}
+
+.register_form>div.register_row.register_checkbox_row>div.register_input_section>label {
+    width: auto;
+}
+
+.flexbox.register_row.reg_password_row {
+    align-items: flex-start;
+}
+
+.flexbox.reg_password_i_d {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flexbox.reg_password_i_d>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox.reg_password_i_d>ul>li::before {
+    content: "- ";
+}
+
+.register_required_note>ul {
+    list-style: none;
+}
+
+.register_required_note>ul>li::before {
+    content: "* ";
+    color: #D01114;
+}
+
+.register_form a {
+    text-decoration-style: dotted;
+    color: inherit;
+}
+
+.register_button_row.flexbox {
+    justify-content: center;
+}
+
+.register_form button {
+    box-sizing: border-box;
+    padding: 8px 72px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register_form button:hover {
+    background-color: #6b8e60;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .register_form {
+        padding: 0;
+    }
+
+    .register_form>.flexbox.register_row {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .register_form>div.register_row>div.register_input_section, .register_form>div.register_row>div.register_input_description {
+        width: 100%;
+    }
+}

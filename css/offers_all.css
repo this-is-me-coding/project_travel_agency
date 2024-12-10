@@ -1,0 +1,188 @@
+.size_box_flex.offers_all_box {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.offers_all_left_pane_filters.flexbox {
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.offers_all_left_pane_filters.flexbox>form.flexbox {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.offers_all_left_pane_filters.flexbox>form>span.flexbox {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.offers_all_left_pane_filters.flexbox>form>span.flexbox>input {
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ebf0f2;
+    border: none;
+    outline: none;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.offers_all_left_pane_filters.flexbox>form>span.flexbox>button {
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.offers_all_left_pane_filters.flexbox>form>span.flexbox>button:hover {
+    background-color: #6b8e60;
+}
+
+.offers_all_right_pane_offers {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.offers_all_single_offer_box.flexbox {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+    align-items: flex-start;
+}
+
+.offers_all_single_offer_left_image {
+    width: 30%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.offers_all_single_offer_right_pane.flexbox {
+    width: 70%;
+    /* height: 150px; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.offers_all_single_offer_right_pane_name {
+    width: 100%;
+}
+
+.offers_all_single_offer_right_pane.flexbox h2 {
+    padding: 4px;
+    background-color: transparent;
+    color: #000;
+    margin: 0 0 10px 0;
+    border-radius: 0;
+}
+
+.offers_all_single_offer_right_pane_location_info_row.flexbox {
+    gap: 10px;
+} 
+
+.offers_all_single_offer_right_pane_location_info_row>span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+} 
+
+.offers_all_single_offer_right_pane_cost.flexbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.offers_all_single_offer_right_pane_cost.flexbox>h2 {
+    background-color: #D8DEFA;
+    border-radius: 8px;
+    margin: 4px 0;
+}
+
+.pages_nav_offers.flexbox {
+    width: 100%;
+}
+
+.offers_all_arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.offers_all_arrows>.offers_all_arrow_left, .offers_all_arrows>.offers_all_arrow_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf0f2;
+    height: 35px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .size_box_flex.offers_all_box {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .offers_all_left_pane_filters.flexbox, .offers_all_right_pane_offers {
+        width: 100%;
+    }
+
+    .offers_all_left_pane_filters.flexbox>form>span.flexbox {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .offers_all_left_pane_filters.flexbox>form>span.flexbox>input {
+        width: 70%;
+    }
+    
+    .offers_all_left_pane_filters.flexbox>form>span.flexbox>button {
+        width: 100%;
+    }
+    
+    .offers_all_single_offer_box.flexbox {
+        flex-direction: column;
+    }
+
+    .offers_all_single_offer_left_image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .offers_all_single_offer_right_pane_cost.flexbox {
+        position: initial;
+    }
+}

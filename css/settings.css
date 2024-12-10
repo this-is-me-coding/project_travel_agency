@@ -1,0 +1,7 @@
+.settings_box a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(0, 0, 0, .7);
+    text-decoration-thickness: 2px;
+    color: inherit;
+}

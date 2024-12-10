@@ -1,0 +1,130 @@
+/* GENERAL POP-UP */
+.popup_window {
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 99;
+}
+
+.popup_window h2, .popup_window h3, .popup_window h4, .popup_window h5, .popup_window h6 {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    color: #000;
+    margin: 0;
+}
+
+.popup_window h2.flexbox {
+    align-items: flex-start;
+}
+
+/* LOGIN POP-UP */
+.popup_user_login_or_options.flexbox {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 420px;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.popup_user_login_or_options.flexbox.shown {
+    display: flex;
+}
+
+.popup_user_login_or_options input, .popup_user_login_or_options button {
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ebf0f2;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popup_user_login_or_options button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.popup_user_login_or_options button:hover {
+    background-color: #6b8e60;
+}
+
+.popup_user_login_or_options label {
+    width: 30%;
+}
+
+.form_login.flexbox {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form_login>div.flexbox {
+    width: inherit;
+}
+
+.login_popup_close.flexbox {
+    background-color: #ebf0f2;
+    padding: 5px;
+    aspect-ratio: 1;
+    height: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login_popup_close:hover {
+    background-color: #C8CFD2;
+}
+
+a.popup_question_link:hover {
+    text-decoration: underline;
+}
+
+.user_options_box.flexbox {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.user_options_box.flexbox>a {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.user_options_row.flexbox {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background-color: #ebf0f2;
+    border-radius: 8px;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.user_options_row.flexbox:hover {
+    background-color: #C8CFD2;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .popup_user_login_or_options.flexbox {
+        width: 100%;
+    }
+}
